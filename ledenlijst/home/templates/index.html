@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="{% url 'upload_csv' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+     <input type="file" name='csv_file'></br>
+     <button type="submit">Upload</button>
+     {% if result %}
+      <pre>{{result}}</pre>
+     {% endif %}
+  </body>
+</html>
