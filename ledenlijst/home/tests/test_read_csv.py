@@ -22,7 +22,6 @@ class ReadCSVFileTestCase(TestCase):
         self.assertTrue(members[0].firstname, "test voornaam")
         self.assertTrue(members[0].lastname, "test achternaam")
 
-
     def test_read_csv_file_with_header(self):
         rows = [
             {
