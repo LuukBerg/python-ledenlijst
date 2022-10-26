@@ -1,7 +1,8 @@
 # prerequisites
 
-  pipenv
-  python 3.* (3.9.5 tested)
+  * pipenv
+  * python 3.* (3.9.5 tested)
+  * docker-compose
 
 # Installation
 
@@ -11,6 +12,10 @@ pipenv install
 
 # Run the server
 
+start the docker-compose
+```
+docker-compose up -d
+```
 start the pipenv shell
 ```
 pipenv shell
