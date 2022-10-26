@@ -16,11 +16,17 @@ start the docker-compose
 ```
 docker-compose up -d
 ```
+
 start the pipenv shell
 ```
 pipenv shell
 cd ledenlijst
 ```
+setup the database (only on first run)
+```
+python manage.py migrate
+```
+Run the server
 ```
 python manage.py runserver
 ```
